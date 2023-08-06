@@ -1,8 +1,8 @@
-import Header from "../components/Header";
+import ProductCard from "../components/cards/ProductCard";
 export default function Home() {
   return (
     <>
-       <Header />
+    <ProductCard />
     </>
   );
 }

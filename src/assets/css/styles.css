@@ -1,11 +1,13 @@
-.max-container-width{
-  width:1180px;
+.max-container-width {
+  width: 1180px;
 }
+
 @media (max-width: 912px) {
-  .max-container-width{
-    width:100%;
+  .max-container-width {
+    width: 100%;
   }
 }
+
 @media (max-width: 767px) {
   .navicon {
     width: 1.125em;
@@ -31,28 +33,40 @@
     top: -5px;
   }
 
-  .menu-btn:not(:checked) ~ .menu {
+  .menu-btn:not(:checked)~.menu {
     display: none;
   }
 
-  .menu-btn:checked ~ .menu {
+  .menu-btn:checked~.menu {
     display: block;
   }
 
-  .menu-btn:checked ~ .menu-icon .navicon {
+  .menu-btn:checked~.menu-icon .navicon {
     background: transparent;
   }
 
-  .menu-btn:checked ~ .menu-icon .navicon::before {
+  .menu-btn:checked~.menu-icon .navicon::before {
     transform: rotate(-45deg);
   }
 
-  .menu-btn:checked ~ .menu-icon .navicon::after {
+  .menu-btn:checked~.menu-icon .navicon::after {
     transform: rotate(45deg);
   }
 
-  .menu-btn:checked ~ .menu-icon .navicon::before,
-  .menu-btn:checked ~ .menu-icon .navicon::after {
+  .menu-btn:checked~.menu-icon .navicon::before,
+  .menu-btn:checked~.menu-icon .navicon::after {
     top: 0;
   }
+}
+
+.pos-absulate {
+  position: absolute;
+  content: "";
+  background-color: red;
+  color: white;
+  /* width: 40px; */
+  font-size: 9px;
+  font-weight: 700;
+  padding: 0px 4px;
+  border-radius: 50%;
 }
