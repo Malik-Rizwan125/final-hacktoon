@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppiens"),
+    url(./assets/fonts/Poppins/Poppins-Regular.ttf) format("truetype");
+}
+
+body {
+  margin: 0;
+  font-family: Poppins;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Header style */
+.gradient-text {
+  background: var(
+    --grad,
+    linear-gradient(
+      135deg,
+      #fb37ff 0%,
+      #bcb9ff 14.9%,
+      #abdcff 44.58%,
+      #1d5bbf 80%,
+      #0396ff 100%
+    )
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.switch {
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.switch[data-isOn="true"] {
+  justify-content: flex-end;
+}
+
+.testimonial-inner {
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+}
